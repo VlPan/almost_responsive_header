@@ -1,0 +1,288 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+*{
+    font-size: 16px;
+    font-family: 'Slabo 27px', serif;
+}
+
+header{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:  url(../../img/background.jpg) top no-repeat;
+    background-size:cover;
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(4px);
+    z-index:1;
+}
+
+header:after{
+    content: '';
+    display:block;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(to bottom,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) center center no-repeat;
+}
+
+nav{
+    position: fixed;
+    width: 90%;
+    height: 50px;
+    left: 5%;
+    background-color: transparent;
+    z-index: 1999;
+    border-bottom: 2px solid #fff;
+    box-shadow: 0 2px 2px rgba(0,0,0,.4);
+}
+
+.nav2{
+    background-color: rgba(0,0,0,.7);
+    border-bottom: 2px solid black;
+}
+
+.a2{
+    color: #fff;
+}
+
+
+nav ul{
+    list-style: none;
+    margin-left: 100px;
+}
+
+nav ul{
+    text-align: center;
+}
+
+nav ul li{
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li a, nav ul li a:focus{
+    cursor: pointer;
+    padding: 10px;
+    display: inline-block;
+    font-size: 18px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    color:#fff;
+    margin-right: 20px;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    transition: background-color .3s;
+
+}
+
+.container{
+    position: absolute;
+    top: 100%;
+    border: 1px solid red;
+    z-index: 999;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.content{
+
+    font-family: 'Lemonada', cursive;
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid burlywood;
+    z-index: 5;
+    text-align: center;
+    color:#f9eeed;
+    text-shadow: 0 2px 1px rgba(0,0,0,.4);
+}
+
+.fa-home,.fa-question-circle-o,.fa-rss{
+    display: none;
+}
+
+.content h3{
+    line-height: 30px;
+}
+.content h1{
+    margin-top: 100px;
+}
+
+[class^="col-"]{
+    border-color: red;
+    height: 200px;
+}
+
+
+
+
+
+
+
+.button{
+    position: relative;
+    display: inline-block;
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+    transition: background .2s;
+    margin-top: 40px;
+}
+
+.call-to-action{
+    background-color: #2196F3;
+}
+
+.call-to-action:hover{
+    background: #0b7dda;
+}
+
+.learn-more{
+    background-color: #4CAF50;
+}
+
+.learn-more:hover{
+    background-color: #46a049
+}
+
+.test{
+    display:block;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+@media(max-width: 700px) {
+    .content h1{
+        font-size: 1.9em;
+    }
+    .content h3{
+        line-height: 20px;
+    }
+    .content h3{
+        font-size: 1.1em;
+    }
+    ul{
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 640px) {
+    .content h1{
+        font-size: 1.8em;
+    }
+    .content {
+        border: none;
+        width: 400px;
+    }
+}
+
+@media(max-width: 525px){
+    nav{
+        height: 100px
+    }
+
+    nav ul{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    nav ul li a:nth-of-type(even){
+        box-sizing: content-box;
+        border-right: 1px solid #fff;
+        border-left: 1px solid #fff;
+    }
+
+
+
+    nav ul li a{
+        margin-right: 30px;
+        display: inline-block;
+        padding: 29px;
+    }
+    .content h1{
+        font-size: 1.7em;
+    }
+    .content {
+        width: 400px;
+        line-height: 40px;
+    }
+
+    nav ul li a span{
+       display: none;
+    }
+
+    .fa-home,.fa-question-circle-o,.fa-rss{
+        display: inline;
+        text-align: center;
+        font-size:40px;
+    }
+
+    .button {
+        display: block;
+        width: 200px;
+        margin: 25px auto;
+    }
+
+    .learn-more{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a{
+        padding: 15px;
+    }
+    nav{
+        height: 73px;
+    }
+}
+
+@media (max-width: 321px) {
+
+    nav ul{
+        position: absolute;
+        right: 23px;
+    }
+
+    .content{
+        width: 250px;
+    }
+
+    .content h1{
+        font-size: 1.5em;
+    }
+
+    .content h3{
+        font-size: 0.9em;
+    }
+    nav ul li a, nav ul li a:hover{
+        padding: 10px;
+        margin-right:0;
+    }
+    nav{
+        height: 63px;
+    }
+
+}
+
+
+
+
+
+
