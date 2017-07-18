@@ -30,6 +30,14 @@ header:after{
     background:linear-gradient(to bottom,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) center center no-repeat;
 }
 
+nav ul{
+    width: 400px;
+    display: inline-block;
+    margin-right: 200px;
+    list-style: none;
+    text-align: center;
+}
+
 nav{
     position: fixed;
     width: 90%;
@@ -50,14 +58,16 @@ nav{
     color: #fff;
 }
 
-
-nav ul{
-    list-style: none;
-    margin-left: 100px;
-}
-
-nav ul{
-    text-align: center;
+nav .fa-twitter, .fa-twitter, .fa-facebook, .fa-vk, .fa-instagram{
+    color: #fff;
+    position: relative;
+    width: 50px;
+    font-size: 30px;
+    top: 50%;
+    left: 20px;
+    transform: translate(0,-50%);
+    display: inline-block;
+    margin-right: 40px;
 }
 
 nav ul li{
@@ -123,7 +133,6 @@ nav ul li a:hover{
 
 [class^="col-"]{
     border-color: red;
-    height: 200px;
 }
 
 
@@ -163,8 +172,39 @@ nav ul li a:hover{
     display:block;
     width: 200px;
     height: 200px;
-    background-color: red;
+    background-color: #4CAF50;
+    margin-top: 10px;
 }
+
+
+
+.form-control{
+    width: 400px;
+
+}
+
+.position-controller{
+    display: inline-block;
+    float:left;
+    margin-right: 40px;
+}
+
+.position-controller .message{
+    overflow: hidden;
+}
+
+.btn-primary{
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
 
 @media(max-width: 700px) {
     .content h1{
@@ -179,6 +219,16 @@ nav ul li a:hover{
     ul{
         margin: 0 auto;
     }
+}
+
+.item{
+    background: #333;
+    text-align: center;
+    height: 500px !important;
+}
+
+.item img{
+    height: 500px !important;
 }
 
 @media(max-width: 640px) {
